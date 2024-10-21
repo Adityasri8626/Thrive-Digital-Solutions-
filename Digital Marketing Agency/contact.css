@@ -1,0 +1,109 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */  
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0; /* Light text color for dark background */
+    background-color: #121212; /* Dark background color */
+}
+
+/* Header styles */
+header {
+    background: rgba(31, 31, 31, 0.8); /* Semi-transparent dark background */
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #e0e0e0; /* Light text color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 40px 20px; /* Add padding for main content */
+}
+
+h1 {
+    color: #ffcc00; /* Gold color for main heading */
+    margin-bottom: 20px;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    background: #1f1f1f; /* Dark background for contact section */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    ;
+}
+
+.contact-details {
+    margin-top: 10px;
+    
+}
+
+/* Founder Section */
+.founder {
+    background: #1f1f1f; /* Dark background for founder section */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.founder-info {
+    display: flex; /* Align founder image and text side by side */
+    gap: 20px;
+}
+
+.founder-image {
+    border-radius: 50%; /* Circular image */
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Map Section */
+.map {
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #1f1f1f; /* Same dark background as header */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

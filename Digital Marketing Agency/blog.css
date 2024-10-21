@@ -1,0 +1,110 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */  
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0; /* Light text color for dark background */
+    background-color: #121212; /* Dark background color */
+}
+
+/* Header styles */
+header {
+    background: rgba(31, 31, 31, 0.8); /* Semi-transparent dark background */
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #e0e0e0; /* Light text color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 40px 20px; /* Add padding for main content */
+}
+
+h1 {
+    color: #ffcc00; /* Gold color for main heading */
+    margin-bottom: 20px;
+}
+
+.blog-post {
+    background: #1f1f1f; /* Dark background for blog posts */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.blog-post h2 {
+    color: #ffcc00; /* Gold color for post titles */
+    margin-bottom: 10px;
+}
+
+.blog-image {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    margin: 10px 0;
+}
+
+video {
+    width: 100%; /* Responsive video */
+    height: auto;
+    margin: 10px 0;
+}
+
+.read-more {
+    display: inline-block;
+    background: #28a745; /* Green background for button */
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.read-more:hover {
+    background: #218838; /* Darker green on hover */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #1f1f1f; /* Same dark background as header */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

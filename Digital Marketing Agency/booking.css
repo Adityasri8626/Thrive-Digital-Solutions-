@@ -1,0 +1,123 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */  
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0; /* Light text color for dark background */
+    background-color: #121212; /* Dark background color */
+}
+
+/* Header styles */
+header {
+    background: rgba(31, 31, 31, 0.9); /* Semi-transparent dark background */
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Changed to relative for non-fixed header */
+    width: 100%; /* Full width */
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #e0e0e0; /* Light text color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #28a745; /* Green color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #218838; /* Darker green on hover */
+}
+
+/* Booking Section Styles */
+#booking {
+    padding: 40px 20px;
+    background: #1f1f1f; /* Dark background for booking section */
+    text-align: center;
+}
+
+.booking-form {
+    max-width: 600px; /* Limit form width for better layout */
+    margin: 0 auto; /* Center the form */
+    background: #2a2a2a; /* Dark background for form */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    margin-bottom: 15px; /* Space between fields */
+    border: 1px solid #444; /* Dark border */
+    border-radius: 5px;
+    background: #fff; /* Light background for inputs */
+    color: #121212; /* Dark text for readability */
+}
+
+.booking-form button {
+    margin-top: 10px; /* Space above button */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #1f1f1f; /* Same dark background as header */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #e0e0e0; /* Light text color for footer links */
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffcc00; /* Gold color on hover */
+}

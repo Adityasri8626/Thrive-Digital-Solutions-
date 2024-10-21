@@ -1,0 +1,146 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0; /* Light text color for dark background */
+    background-color: #121212; /* Dark background color */
+    padding-top: 60px; /* Offset for fixed header */
+}
+
+/* Header styles */
+header {
+    background: rgba(31, 31, 31, 0.8); /* Semi-transparent dark background */
+    color: #fff;
+    padding: 15px 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Gold color on hover */
+}
+
+/* About Us Section */
+#about {
+    padding: 60px 20px;
+    background: #1f1f1f;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    color: #ffcc00; /* Gold color for headings */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Services Section */
+#about h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+#about ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+#about ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Mission and Vision Section */
+#mission-vision {
+    padding: 40px 20px;
+    background: #2a2a2a; /* Slightly lighter background */
+}
+
+#mission-vision h2 {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+#mission-vision p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Meet the Team Section */
+#team {
+    padding: 40px 20px;
+    background: #1f1f1f;
+}
+
+#team h2 {
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+#team p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #1f1f1f;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #e0e0e0;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}

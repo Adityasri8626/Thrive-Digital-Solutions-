@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+header {
+    background-color: #1a1a1a; /* Header background */
+    padding: 30px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 28px;
+    text-align: left;
+    font-weight: bold;
+    color: white; /* Bright yellow for logo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 8;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white; /* Bright yellow for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white; /* Slightly lighter yellow on hover */
+}
+
+#testimonials {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: white; /* Bright yellow for headings */
+    margin-bottom: 20px;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Space between testimonials */
+}
+
+.testimonial {
+    background-color: #1e1e1e; /* Testimonial background */
+    border: 1px solid #ffcc00; /* Bright yellow border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 30px; /* Increased padding for a bigger box */
+    width: 400px; /* Set a fixed width */
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+}
+
+.testimonial:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.client-img {
+    width: 100px; /* Image width */
+    height: 100px; /* Image height */
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 10px; /* Space below image */
+}
+
+blockquote {
+    font-style: italic; /* Italic style for quotes */
+    margin: 10px 0; /* Margin above and below */
+}
+
+p {
+    color: #dddddd; /* Slightly lighter text for names */
+}
+
+.nav-buttons {
+    margin-top: 20px; /* Space above buttons */
+}
+
+.prev-btn, .next-btn {
+    background-color: #ffcc00; /* Bright yellow for button background */
+    color: #000000; /* Black text for buttons */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: #ffd54f; /* Slightly lighter yellow on hover */
+}
+

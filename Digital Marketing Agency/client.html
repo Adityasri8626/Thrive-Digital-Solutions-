@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Testimonials</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Thrive Digital Solutions</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="case.html">Case Studies</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+
+        <div class="testimonial-container">
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+                <img src="client1.jpg" alt="Client 1" class="client-img">
+                <blockquote>
+                    "Thrive Digital Solutions transformed our online presence. We saw a significant boost in traffic and engagement."
+                </blockquote>
+                <p>- Swapnil, Digital Marketing Expert</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial">
+                <img src="1712065728520.jpeg" alt="Client 2" class="client-img">
+                <blockquote>
+                    "Their social media campaigns helped us gain more leads and improve our conversions."
+                </blockquote>
+                <p>- Harsh, Marketing Manager</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial">
+                <img src="client3.jpg" alt="Client 3" class="client-img">
+                <blockquote>
+                    "Our website redesign was exactly what we needed. It's modern, user-friendly, and has improved our customer experience."
+                </blockquote>
+                <p>- Rohan Singh, Marketing Expert</p>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial">
+                <img src="client4.jpg" alt="Client 4" class="client-img">
+                <blockquote>
+                    "The UI/UX design improvements helped us retain customers and boost satisfaction."
+                </blockquote>
+                <p>- Anmol Pandey, SEO Manager</p>
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="nav-buttons">
+            <button class="prev-btn">← Previous</button>
+            <button class="next-btn">Next →</button>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to manage the testimonial slider
+        let currentSlide = 0;
+        const testimonials = document.querySelectorAll('.testimonial');
+        const totalSlides = testimonials.length;
+
+        function showSlide(index) {
+            testimonials.forEach((testimonial, idx) => {
+                testimonial.style.display = idx === index ? 'block' : 'none';
+            });
+        }
+
+        // Show the next testimonial
+        document.querySelector('.next-btn').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        });
+
+        // Show the previous testimonial
+        document.querySelector('.prev-btn').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        });
+
+        // Initial display
+        showSlide(currentSlide);
+    </script>
+
+</body>
+</html>
